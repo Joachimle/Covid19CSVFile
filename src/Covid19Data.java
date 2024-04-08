@@ -8,7 +8,15 @@ public class Covid19Data {
     private int indlagte;
     private String dato;
 
-    public Covid19Data(String region, String aldersgruppe, int bekræftedeTilfældeIAlt, int døde, int indlagtePåIntensivAfdeling,int indlagte, String dato) {
+    public String getRegion() {
+        return region;
+    }
+
+    public String getAldersgruppe() {
+        return aldersgruppe;
+    }
+
+    public Covid19Data(String region, String aldersgruppe, int bekræftedeTilfældeIAlt, int døde, int indlagtePåIntensivAfdeling, int indlagte, String dato) {
         this.region = region;
         this.aldersgruppe = aldersgruppe;
         this.bekræftedeTilfældeIAlt = bekræftedeTilfældeIAlt;
